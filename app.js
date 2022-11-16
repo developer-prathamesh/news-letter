@@ -59,6 +59,10 @@ app.post('/', (req, res, next) => {
     request.end()
 })
 
+app.post("/success",function(req,res){
+    res.redirect("/")
+})
+
 
 app.post("/failure",function(req,res){
     // res.sendFile(__dirname+"/failure.html")
